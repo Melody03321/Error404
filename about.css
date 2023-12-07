@@ -26,8 +26,6 @@
 html {
 	margin: 0;
 	padding: 0;
-	background: #fff url(Images/main_bg.jpg) no-repeat bottom right;
-	background-size: cover;
 	animation: fadein 1s;
 }
 
@@ -43,7 +41,7 @@ html {
 body { 
 	font: georgia, sans-serif;
 	line-height: 1.88889;
-	color: #2F2F2F; 
+	color: rgb(71, 128, 112); 
 	background-color:rgb(200, 228, 178);
 	margin: 0; 
 	padding: 0;
