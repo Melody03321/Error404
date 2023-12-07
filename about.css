@@ -1,12 +1,6 @@
 /* Polices */
 @font-face
 {
-    font-family:footer;
-    src: url(font/footer.ttf);
-}
-
-@font-face
-{
     font-family:texte;
     src: url(font/txt.ttf);
 }
@@ -159,6 +153,7 @@ tr:hover {
 	margin-top: 30px;
 	background: #DDDEDB;
 	width: 90%;
+	text-align: center;
 	border: 1px solid #D5CDB1;
 	border-radius: 3px;
 	border-bottom: 5px solid #435D77F;
@@ -247,7 +242,7 @@ footer {
 	margin-top: 100px;
 	padding: 10px 10px 10px 10px;
 	border-top: 1px solid #cccccc;
-	font-family:footer;
+	font-family:texte;
 }
 
 /* Titre */
@@ -278,7 +273,6 @@ footer {
 	left: 0;
 	height: 3px;
 	width: 100%;
-	background-color: #2F2F2F;
 	transform-origin: 0 0;
 }
 
