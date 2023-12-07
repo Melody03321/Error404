@@ -39,10 +39,9 @@ html {
 }
 
 body { 
-	font: georgia, sans-serif;
 	line-height: 1.88889;
 	color: rgb(50, 120, 146); 
-	background-color:rgb(200, 228, 178);
+	background-color:#9BD8A6;;
 	margin: 0; 
 	padding: 0;
 }
@@ -421,8 +420,8 @@ a:visited:active {
   font-family: menu;
   font-size: 20px;
   cursor: pointer;
-  background-color: #7B868C;
-  color: #ECF1F7;
+  background-color: #60BFAB;
+  color: #292E6F;
   padding: 10px 15px;
   border: none;
 }
