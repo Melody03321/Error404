@@ -14,7 +14,7 @@
 @font-face
 {
     font-family:texte;
-    src: url(font/txt.otf);
+    src: url(font/txt.ttf);
 }
 @font-face
 {
@@ -24,7 +24,7 @@
 @font-face
 {
     font-family:h2_h3;
-    src: url(Police/h2_h3.ttf);
+    src: url(font/bienvenue.ttf);
 }
 
 /* Principal */
@@ -82,7 +82,7 @@ h1 {
 	text-align: center;
 	margin: auto;
 	font-family: h1;
-	font-size: 6em;
+	font-size: 2em;
 	padding: 10px;
 }
 
@@ -90,7 +90,7 @@ h2 {
 	margin-left : 10px;
 	font-weight: lighter;
 	letter-spacing: 4px;
-	line-height: 1.3em;
+	line-height: 1.6em;
 	font-family:h2_h3;
 	font-size: 1.5em;
 }
