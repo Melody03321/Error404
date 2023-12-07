@@ -7,12 +7,6 @@
 
 @font-face
 {
-    font-family:menu;
-    src: url(font/menu.ttf);
-}
-
-@font-face
-{
     font-family:texte;
     src: url(font/txt.ttf);
 }
@@ -50,7 +44,7 @@ body {
 	font: georgia, sans-serif;
 	line-height: 1.88889;
 	color: #2F2F2F; 
-	background-color:rgb(190, 241, 215);
+	background-color:rgb(200, 228, 178);
 	margin: 0; 
 	padding: 0;
 }
