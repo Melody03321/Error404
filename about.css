@@ -2,19 +2,19 @@
 @font-face
 {
     font-family:footer;
-    src: url(Police/footer.ttf);
+    src: url(font/footer.ttf);
 }
 
 @font-face
 {
     font-family:menu;
-    src: url(Police/menu.ttf);
+    src: url(font/menu.ttf);
 }
 
 @font-face
 {
     font-family:texte;
-    src: url(Police/texte.otf);
+    src: url(font/txt.otf);
 }
 @font-face
 {
