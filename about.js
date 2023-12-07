@@ -83,3 +83,9 @@ function carousel() {
 	x[myIndex-1].style.display = "block";  
 	setTimeout(carousel, 4000); // Change image every 4 seconds
 }
+// When the user clicks on <div>, open the popup
+function popup() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
