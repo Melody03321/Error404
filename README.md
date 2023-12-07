@@ -1,2 +1,2 @@
 # Error404
-sitr
+site
