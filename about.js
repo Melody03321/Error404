@@ -66,7 +66,7 @@ function scrollFunction() {
 }
 
 function topFunction() {
-	myScrollTo("band-img");
+	myScrollTo("main");
 }
 
 var myIndex = 0;
