@@ -187,12 +187,12 @@ footer {
 .ml1 {
 	font-size: auto;
 	margin-top: 30px;
+	font-family:h1h1;
 }
 
 .ml1 .letter {
 	display: inline-block;
 	line-height: 1em;
-	font-family: h1h1;
 	font-size: 2em;
 }
 
