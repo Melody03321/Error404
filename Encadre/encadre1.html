@@ -1,23 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="utf-8"/>
-		<title>Ecolo mètre</title>
-		<link rel="stylesheet" href="Bou/about.css"/>
-		<link rel="icon"  type="image/png" href="Images/logo111.png" sizes="16x16" />
-			
-	</head>
-	<body>
-		<div id="general">
-			<h2>Ecolo-mètre</h2>
+<head>
+    <meta charset="utf-8"/>
+    <title>Ecolo mètre</title>
 
-			
-			<button onclick="repondre('Bouton 1')">Je ne suis pas d'accord</button>
-			<button onclick="repondre('Bouton 2')">Je ne sais pas</button>
-			<button onclick="repondre('Bouton 3')">Je suis d'accord</button>
-			<!--<button class="popup" onclick="popup()">Click me!
-			<span class="popuptext" id="myPopup">Popup text...</span> -->
-		</div>
-	</body>
+    <link rel="stylesheet" href="Bou/about.css"/>
+    <link rel="icon"  type="image/png" href="Images/logo111.png" sizes="16x16" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #general {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        button {
+            background-color: #9FDC1B;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6023e4;
+        }
+
+        #resultat {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+    <script>
+        function choixBouton(bouton) {
+            // Définir les textes pour chaque bouton
+            var reponses = {
+                'Bouton 1': 'Texte pour Bouton 1',
+                'Bouton 2': 'Texte pour Bouton 2',
+                'Bouton 3': 'Texte pour Bouton 3'
+            };
+
+            var texteAffiche = reponses[bouton];
+
+            // Afficher le texte sous le bouton
+            document.getElementById('resultat').innerHTML = texteAffiche;
+        }
+    </script>
+</head>
+<body>
+<div id="general">
+    <h2>Ecolo-mètre</h2>
+
+    <button onclick="choixBouton('Bouton 1')">Je ne suis pas d'accord</button>
+    <button onclick="choixBouton('Bouton 2')">Je ne sais pas</button>
+    <button onclick="choixBouton('Bouton 3')">Je suis d'accord</button>
+
+    <!-- Affichage du résultat -->
+    <div id="resultat"></div>
+</div>
+</body>
 </html>
