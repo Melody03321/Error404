@@ -37,6 +37,8 @@ body {
 	color:#637191; 
 	background-image: url("Bou/fond.png");
 	background-size:cover;
+	font-family:txt;
+	background-position: center;
 	background-color:#9BD8A6;
 	margin: 0; 
 	padding: 0;
