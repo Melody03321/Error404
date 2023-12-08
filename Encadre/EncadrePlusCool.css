@@ -2,6 +2,7 @@ html {
   background-color: #00539f;
 }
 
-h2 {
+h2,
+p {
 	 text-align: center;
 }
