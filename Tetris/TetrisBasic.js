@@ -342,8 +342,8 @@ function CheckForVerticalCollison(){
     if(collision){
         // Check for game over and if so set game over text
         if(startY <= 2){
-            winOrLose = "Game Over";
-            ctx.fillStyle = 'black';
+            winOrLose = "Bravo vous avez perdu votre temps";
+            ctx.fillStyle = 'white';
             ctx.fillRect(310, 242, 140, 30);
             ctx.fillStyle = 'black';
             ctx.fillText(winOrLose, 310, 261);
