@@ -21,6 +21,9 @@ html {
 	margin: 0;
 	padding: 0;
 	animation: fadein 1s;
+	background: #fff url(Images/main_bg.jpg) no-repeat bottom right;
+	background-size: auto;
+	background-size: cover;
 }
 
 @keyframes fadein {
