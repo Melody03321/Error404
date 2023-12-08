@@ -344,7 +344,7 @@ footer {
   z-index: 3000;
   top: 0;
   left: 0;
-  background-color: #c6bfdb;
+  background-color: #b3b7c4;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -422,7 +422,7 @@ a:visited:active {
   font-family: menu;
   font-size: 20px;
   cursor: pointer;
-  background-color: #7B868C;
+  background-color: #b3b7c4;
   color: #ECF1F7;
   padding: 10px 15px;
   border: none;
