@@ -19,7 +19,7 @@
 html {
 	margin: 0;
 	padding: 0;
-	background: #fff url(Bou/fond.png) no-repeat bottom right;
+	background: #fff url('Bou/fond.png') no-repeat bottom right;
 	background-size: cover;
 	animation: fadein 1s;
 }
