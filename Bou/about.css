@@ -263,7 +263,7 @@ footer {
   z-index: 3000;
   top: 0;
   left: 0;
-  background-color: #637191;
+  background-color: #F2F2F2;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -366,7 +366,7 @@ nav {
 	border-radius: 1px;
 	/*background-color: PowderBlue;
 	image
-	background-image: url('binaire4.png');
+	background-image: url('Bou/fond.png');
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: top;*/
