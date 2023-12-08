@@ -169,7 +169,7 @@ tr:hover {
 	overflow: hidden;
 }
 
-.generalcharlie {
+.charlie {
 	box-shadow: none;
 	background: none;
 	margin: auto;
@@ -195,11 +195,11 @@ tr:hover {
   text-align: center;
 }
 
-.generalcharlie:hover .image {
+.charlie:hover .image {
   opacity: 0.3;
 }
 
-.generalcharlie:hover .middle {
+.lcharlie:hover .middle {
   opacity: 1;
 }
 
