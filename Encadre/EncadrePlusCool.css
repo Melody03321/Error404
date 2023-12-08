@@ -1,10 +1,4 @@
-html {
-	margin: 0;
-	padding: 0;
-	background: #fff url("fond.png") no-repeat bottom right;
-	background-size: cover;
-	animation: fadein 1s;
-}
+
 
 h2,
 p
