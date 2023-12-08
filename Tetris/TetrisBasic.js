@@ -459,7 +459,7 @@ function CheckForCompletedRows(){
                 let coorX = coordinateArray[i][y].x;
                 let coorY = coordinateArray[i][y].y;
                 // Draw the square as white
-                ctx.fillStyle = 'white';
+                ctx.fillStyle = '';
                 ctx.fillRect(coorX, coorY, 21, 21);
             }
         }
