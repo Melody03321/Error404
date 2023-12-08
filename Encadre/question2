@@ -25,7 +25,7 @@
 </head>
 <body>
 <div id="general">
-    <h2>Question n° 1 </h2>
+    <h2>Question n° 2 </h2>
     <p>Est- ce qu’avoir un logement bien isolé peut avoir un impact sur notre rejet de CO2?</p>
 
     <button onclick="choixBouton('Bouton 1')">Je ne suis pas d'accord</button>
