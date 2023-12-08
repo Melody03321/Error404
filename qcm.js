@@ -1,7 +1,7 @@
-var numQues = 9;
+var numQues = 10;
 var numChoi = 3;
 
-var answers = new Array(9), comm = new Array(9);
+var answers = new Array(10), comm = new Array(10);
 answers[0] = "Non"
 answers[1] = "Non"
 answers[2] = "Non"
