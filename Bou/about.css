@@ -1,18 +1,23 @@
 /* Polices */
 @font-face
 {
+    font-family:footer;
+    src: url(Bou/font/txt.ttf);
+}
+@font-face
+{
     font-family:texte;
     src: url(Bou/font/txt.ttf);
 }
 @font-face
 {
-    font-family:h1h1;
+    font-family:h1;
     src: url(Bou/font/h1h1h1.otf);
 }
 @font-face
 {
     font-family:h2_h3;
-    src: url(Bou/font/bienvenue.ttf);
+    src: url(Bou/font/h1h1hh1.otf);
 }
 
 /* Principal */
@@ -25,11 +30,20 @@ html {
 	animation: fadein 1s;
 }
 
-
+@keyframes fadein {
+    from {
+        opacity:0;
+        }
+    to {
+        opacity:1;
+    }
+}
 
 body { 
+	font: georgia, sans-serif;
 	line-height: 1.88889;
-	color: #292E6F; 
+	color: #2F2F2F; 
+	background-color:rgba(226,255,244,0.5);
 	margin: 0; 
 	padding: 0;
 }
@@ -60,21 +74,18 @@ ul {
 h1 { 
 	text-align: center;
 	margin: auto;
-	font-family: h1h1;
-	font-size: 4em;
+	font-family: h1;
+	font-size: 1.6em;
 	padding: 10px;
 }
 
-
-
 h2 { 
 	margin-left : 10px;
-	text-align: center;
 	font-weight: lighter;
 	letter-spacing: 4px;
-	line-height: 1.6em;
+	line-height: 1.3em;
 	font-family:h2_h3;
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 h3 { 
@@ -88,10 +99,27 @@ h4 {
 	text-align: center;
 }
 
+img { 
+	border: 1px solid #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #202020;
+	width: 50%;
+	margin: auto;
+	display: block;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 td, th {
   width: 70%;
   padding: 5px;
-  border: 1px solid rgb(107, 107, 107);
+  border: 1px solid black;
 }
 
 tr:hover {
@@ -100,13 +128,18 @@ tr:hover {
 
 /* Contenu */
 
+.separation {
+	border-bottom: 1px solid #000000;	
+	margin-top: 50px;
+}
+
 .partie { 
 	margin: auto;
 	display: block;
 	margin-top: 30px;
-	background: rgb(204, 233, 219);
+	background: #DDDEDB;
 	width: 90%;
-	border: 1px solid rgb(168, 217, 195);
+	border: 1px solid #D5CDB1;
 	border-radius: 5px;
 	transition: box-shadow 0.5s ease-in-out, background 0.8s;
 	border-bottom: 5px solid #2F2F2F;
@@ -126,12 +159,11 @@ tr:hover {
 	margin: auto;
 	display: block;
 	margin-top: 30px;
-	background: rgba(142, 213, 212, 0.607);
+	background: #DDDEDB;
 	width: 90%;
-	text-align: center;
-	border: 1px solid #8a8ea5;
+	border: 1px solid #D5CDB1;
 	border-radius: 3px;
-	border-bottom: 5px solid #43577f64;
+	border-bottom: 5px solid #435D77F;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow: hidden;
 }
@@ -157,10 +189,57 @@ tr:hover {
 	font-style: italic;
 }
 
+#box {
+	display: flex;
+	align-items: flex-start;
+}
+
+#lexique{
+	clear: right;
+	width: 60%;
+	margin-right: 30px;
+	font-family:texte;
+}
+
+#sources {
+	width: 94.5%;
+	padding: 10px;
+}
+
+#sources_enigma {
+	float: left;
+	width: 45%;
+}
+
+#sources_html {
+	float: right;
+	margin-right: 10px;
+	width: 45%;
+}
+
+#rouge { 
+	color: red;
+}
+
+#pas_de_puce {
+	list-style-type: none;
+}
+
+.tiret:before {
+	content: '- ';
+}
 
 /* En-tête */
 
+#entete {
+	background-color:alice-blue;
+	height:auto;
+}
 
+#band-img{
+   width: 99.5%;
+   position:;
+}
 
 /* Footer */
 
@@ -169,21 +248,21 @@ footer {
 	margin: 0;
 	margin-top: 100px;
 	padding: 10px 10px 10px 10px;
-	border-top: 1px solid rgb(213, 238, 217);
-	font-family:texte;
+	border-top: 1px solid #cccccc;
+	font-family:footer;
 }
 
 /* Titre */
 
 .ml1 {
 	font-size: auto;
-	font-family: h1h1;
-	margin-top: 30px
+	margin-top: 30px;
 }
 
 .ml1 .letter {
 	display: inline-block;
 	line-height: 1em;
+	font-family: h1;
 	font-size: 2em;
 }
 
@@ -201,12 +280,19 @@ footer {
 	left: 0;
 	height: 3px;
 	width: 100%;
-	background-color: #454545;
+	background-color: #2F2F2F;
 	transform-origin: 0 0;
 }
 
 .ml1 .line1 { top: 0; }
 .ml1 .line2 { bottom: 0; }
+
+/* Bouton "Entrer" */
+
+.centrer {
+	margin: auto;
+	display: block;
+}
 
 #entrer {
 	position : relative;
@@ -258,7 +344,7 @@ footer {
   z-index: 3000;
   top: 0;
   left: 0;
-  background-color: #f3f8f4;
+  background-color: #7B868C;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -278,14 +364,14 @@ a {
 a:hover {
 	font-family:texte;
 	font-size:auto;
-	color:#a4a9ed;
+	color:#74adad;
 	text-decoration: none;
 }
 
 a:active {
 	font-family:texte;
 	font-size:auto;
-	color:#9597ad;
+	color:#b8e6c2;
 	text-decoration: underline;
 }
 
@@ -312,7 +398,7 @@ a:visited:active {
 
 .sidebar a {
   font-family: menu;
-  color: #52708e;
+  color: #435D77;
   padding: 8px 8px 8px 12px;
   text-decoration: none;
   font-size: 17px;
@@ -321,7 +407,7 @@ a:visited:active {
 }
 
 .sidebar a:hover {
-  color: rgb(115, 206, 142);
+  color: #DDDEDB;
 }
 
 .sidebar .closebtn {
@@ -336,8 +422,8 @@ a:visited:active {
   font-family: menu;
   font-size: 20px;
   cursor: pointer;
-  background-color: #60BFAB;
-  color: #292E6F;
+  background-color: #7B868C;
+  color: #ECF1F7;
   padding: 10px 15px;
   border: none;
 }
@@ -361,7 +447,10 @@ nav {
 	border-radius: 1px;
 	/*background-color: PowderBlue;
 	image
-	*/
+	background-image: url('binaire4.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: top;*/
 }
 
 /* Bouton "Lancer le simulateur" */
@@ -409,6 +498,18 @@ nav {
 	font-size: 1.5em;
 	font-family: texte;
 	color: #1F8295;
+}
+
+.qcm_button {
+	background-color: #BBBBBB;
+	border: none;
+	font-family: texte;
+	font-size: 0.9em;
+	border: 2px solid #BBBBBB;
+	border-radius: 2px;
+	transition: background 0.5s;
+	padding: 10px;
+	cursor: pointer;
 }
 
 .qcm_button:hover {
@@ -484,6 +585,20 @@ nav {
 	transform: rotate(45deg);
 }
 
+/* Slideshow */
+
+.mySlides {
+	width: 35%;
+	opacity: 1;
+    animation: fade 4s linear;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  20%,80% { opacity: 1 }
+}
+
+
 #myBtn {
   display: none;
   position: fixed;
@@ -494,7 +609,7 @@ nav {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color:#394B80;
+  background-color: #99a9c2;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -502,5 +617,5 @@ nav {
 }
 
 #myBtn:hover{
-background-color: #b4b6d1;
+background-color: #373e4a;
 }
