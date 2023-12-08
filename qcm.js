@@ -39,10 +39,7 @@ function getScore(form) {
 			}
 		}
 	}
-	if ((quiz.check2.checked) == true && (quiz.check3.checked) == true && (quiz.check1.checked) == false)  {
-				score++;
-			}
-
+	
 	score = Math.round(score/(numQues+1)*100);
 	form.percentage.value = score + "%";
 
