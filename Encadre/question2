@@ -3,7 +3,7 @@
 <head>
     <link href="encadrePlusCool.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8"/>
-    <title>Est- ce qu’avoir un logement bien isolé peut avoir un impact sur notre rejet de CO2?</title>
+    <title>Ecolo-metre</title>
 
     <link rel="stylesheet" href="about.css"/>
     <link rel="icon"  type="image/png" href="Images/logo111.png" sizes="16x16" />
@@ -11,9 +11,9 @@
         function choixBouton(bouton) {
             // Définir les textes pour chaque bouton
             var reponses = {
-                'Bouton 1': 'Bravo, cela permet une consommation de chauffage moins important dans moins de consommation de gaz à effet de serre ou de toute autre énergie pouvant servir au chauffage domestique',
-                'Bouton 2': 'cela permet une consommation de chauffage moins important dans moins de consommation de gaz à effet de serre ou de toute autre énergie pouvant servir au chauffage domestique',
-                'Bouton 3': 'Dommage, cela permet une consommation de chauffage moins important dans moins de consommation de gaz à effet de serre ou de toute autre énergie pouvant servir au chauffage domestique'
+                'Bouton 1': 'Dommage, cela permet une consommation de chauffage moins important dans moins de consommation de gaz à effet de serre ou de toute autre énergie pouvant servir au chauffage domestique',
+                'Bouton 2': 'Cela permet une consommation de chauffage moins important dans moins de consommation de gaz à effet de serre ou de toute autre énergie pouvant servir au chauffage domestique',
+                'Bouton 3': 'Bravo, cela permet une consommation de chauffage moins important dans moins de consommation de gaz à effet de serre ou de toute autre énergie pouvant servir au chauffage domestique'
             };
 
             var texteAffiche = reponses[bouton];
@@ -25,7 +25,8 @@
 </head>
 <body>
 <div id="general">
-    <h2>Ecolo-mètre</h2>
+    <h2>Question n° 1 </h2>
+    <p>Est- ce qu’avoir un logement bien isolé peut avoir un impact sur notre rejet de CO2?</p>
 
     <button onclick="choixBouton('Bouton 1')">Je ne suis pas d'accord</button>
     <button onclick="choixBouton('Bouton 2')">Je ne sais pas</button>
