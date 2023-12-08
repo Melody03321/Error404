@@ -2,17 +2,17 @@
 @font-face
 {
     font-family:texte;
-    src: url(font/txt.ttf);
+    src: url(Bou/font/txt.ttf);
 }
 @font-face
 {
     font-family:h1;
-    src: url(font/h1h1h1.otf);
+    src: url(Bou/font/h1h1h1.otf);
 }
 @font-face
 {
     font-family:h2_h3;
-    src: url(font/bienvenue.ttf);
+    src: url(Bou/font/bienvenue.ttf);
 }
 
 /* Principal */
