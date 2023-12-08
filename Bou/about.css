@@ -1,3 +1,4 @@
+/* Polices */
 @font-face
 {
     font-family:texte;
@@ -19,25 +20,16 @@
 html {
 	margin: 0;
 	padding: 0;
-	background: #fff url('Bou/fond.png') no-repeat bottom right;
+	background: #fff url(Bou/fond.png) no-repeat bottom right;
 	background-size: cover;
 	animation: fadein 1s;
 }
 
-@keyframes fadein {
-    from {
-        opacity:0;
-        }
-    to {
-        opacity:1;
-    }
-}
+
 
 body { 
-	font: georgia, sans-serif;
 	line-height: 1.88889;
-	color: #2F2F2F; 
-	background-color:rgba(226,255,244,0.5);
+	color: #292E6F; 
 	margin: 0; 
 	padding: 0;
 }
@@ -73,6 +65,8 @@ h1 {
 	padding: 10px;
 }
 
+
+
 h2 { 
 	margin-left : 10px;
 	text-align: center;
@@ -97,7 +91,7 @@ h4 {
 td, th {
   width: 70%;
   padding: 5px;
-  border: 1px solid black;
+  border: 1px solid rgb(107, 107, 107);
 }
 
 tr:hover {
@@ -135,7 +129,7 @@ tr:hover {
 	background: rgba(142, 213, 212, 0.607);
 	width: 90%;
 	text-align: center;
-	border: 1px solid #D5CDB1;
+	border: 1px solid #8a8ea5;
 	border-radius: 3px;
 	border-bottom: 5px solid #43577f64;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -183,6 +177,7 @@ footer {
 
 .ml1 {
 	font-size: auto;
+	font-family: h1h1;
 	margin-top: 30px
 }
 
@@ -206,7 +201,7 @@ footer {
 	left: 0;
 	height: 3px;
 	width: 100%;
-	background-color: #2F2F2F;
+	background-color: #454545;
 	transform-origin: 0 0;
 }
 
@@ -263,7 +258,7 @@ footer {
   z-index: 3000;
   top: 0;
   left: 0;
-  background-color: #F2F2F2;
+  background-color: #f3f8f4;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -364,10 +359,6 @@ nav {
 	padding: 0.5% 0.5% 0.5% 0.5%;
 	min-height: 250px;
 	border-radius: 1px;
-	background-image: url('Bou/fond.png');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-position: top;
 	/*background-color: PowderBlue;
 	image
 	*/
