@@ -17,7 +17,7 @@
 @font-face
 {
     font-family:h2_h3;
-    src: url("h1h1hh1.otf");
+    src: url("bienvenue.ttf");
 }
 
 /* Principal */
@@ -83,7 +83,8 @@ h2 {
 	margin-left : 10px;
 	font-weight: lighter;
 	letter-spacing: 4px;
-	line-height: 1.3em;
+	line-height: 2em;
+	text-align: center;
 	font-family:h2_h3;
 	font-size: 1.5em;
 }
