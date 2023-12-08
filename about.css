@@ -2,22 +2,22 @@
 @font-face
 {
     font-family:footer;
-    src: url(txt.ttf);
+    src: url("txt.ttf");
 }
 @font-face
 {
     font-family:texte;
-    src: url(txt.ttf);
+    src: url("txt.ttf");
 }
 @font-face
 {
     font-family:h1;
-    src: url(h1h1h1.otf );
+    src: url("h1h1h1.otf" );
 }
 @font-face
 {
     font-family:h2_h3;
-    src: url(h1h1hh1.otf);
+    src: url("h1h1hh1.otf");
 }
 
 /* Principal */
@@ -25,7 +25,7 @@
 html {
 	margin: 0;
 	padding: 0;
-	background-image: #fff url(fond.png) no-repeat bottom right;
+	background-image: #fff url("fond.png") no-repeat bottom right;
 	background-size: cover;
 	animation: fadein 1s;
 }
