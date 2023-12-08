@@ -22,24 +22,29 @@ comm[6] = "Nous avons tous appris au collège que les arbres ont la propriété 
 comm[7] = "L'Agence internationale de l'énergie (AIE) affirme que les énergies renouvelables ont le potentiel de répondre à une grande partie de nos besoins énergétiques mondiaux avec des investissements et des progrès technologiques. Cependant la rapidité de la transition dépend des politiques gouvernementales de chaque pays."
 comm[8] = "Le GIEC indique que la combustion des énergies fossiles, comme le charbon, le pétrole et le gaz naturel, contribue de manière significative aux émissions mondiales de gaz à effet de serre. On ne vous apprend rien MAIS nous avons quelques chiffres (STONKS).En 2019 l’émission totale mondiale était de 42,2 GIGA TONNE de CO2."
 comm[9] = "Il faut savoir que pour construire une voiture électrique, il faut de nombreux composants électroniques, donc cela nécessite souvent d'importer ces composants par bateau, de plus, il faut ensuite importer la voiture en France. Ensuite, lors de l’utilisation de la voiture, nous devons la recharger. Ce recharge utilise de l’électricité pas toujours verte produisant du CO2. Les voitures électriques utilisent aussi des batteries qui ont une durée de vie limitée. Lors du changement de la batterie, les batteries usagées ne peuvent pas être recyclées et contiennent des produits très polluants."
+
+
 function getScore(form) {
-    var inputs = form.getElementsByTagName('input');
-    var correctCount = 0;
-    var wrongCount = 0;
+	var score = 0;
+	var currElt;
+	var currSelection;
+	for (i=0; i<numQues; i++) {
+		currElt = i*numChoi;
+		for (j=0; j<numChoi; j++) {
+			currSelection = form.elements[currElt + j];
+			if (currSelection.checked) {
+				if (currSelection.value == answers[i]) {
+					score++;
+				}
+			}
+		}
+	}
+	if ((quiz.check2.checked) == true && (quiz.check3.checked) == true && (quiz.check1.checked) == false)  {
+				score++;
+			}
 
-    for (var i = 0; i < inputs.length; i++) {
-        if (inputs[i].type === 'radio') {
-            if (inputs[i].value === 'Oui') {
-                correctCount++;
-            } else {
-                wrongCount++;
-            }
-        }
-    }
-
-    document.getElementById('score').value = correctCount;
-    document.getElementById('solutions').value = 'Score: ' + correctCount + '/10' + '\n\nQuestions correctes:\n\n1. L’efficacité énergétique (ou efficacité du solaire) est la proportion de l’énergie réellement utilisée pour la production d’énergie.\n\n3. Les panneaux solaires thermiques peuvent-il remplacer complètement l’énergie fossile pour la production d’électricité.\n\n4. Le réchauffement climatique est une préoccupation croissante pour les scientifiques du monde entier.\n\n5. Le déclin des subsides pour les énergies renouvelables a des conséquences néfastes sur la lutte contre le changement climatique.\n\n6. La réduction des émissions de CO2 est cruciale pour prévenir le réchauffement climatique.\n\n7. L’utilisation de l’énergie renouvelable doit être priorisée par rapport à l’utilisation d’énergies fossiles.\n\n8. Les énergies renouvelables, comme le solaire et l’éolien, peuvent-il répondre à une grande partie de nos besoins énergétiques.\n\n9. Le nucléaire est responsable de la majorité des émissions mondiales de gaz à effet de serre.\n\n10. Faut t’il acheter une Tesla pour réduire son empreinte carbone.\n';
-}
+	score = Math.round(score/(numQues+1)*100);
+	form.percentage.value = score + "%";
 
 	var correctAnswers = ""; 
 	for (i=1; i<=numQues+1; i++) {
