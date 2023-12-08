@@ -2,32 +2,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<style>
-			h2{
-				text-align: center;
-				color: rgb(255,255,255);
-				font-family: 'Lucida Handwrting',sans-serif;
-			}
-			p{
-				text-align: center;
-				color: rgb(72,255,0);
-				font-family: 'Lucida Handwrting',sans-serif;
-			}
-			body{
-				background-image: url('https://st.depositphotos.com/1001564/2470/i/450/depositphotos_24704059-stock-photo-background.jpg');
-				background-size: cover;
-				background-position: centre;
-				font-family: 'Arial', sans-serif;
-				background-image: url('https://st.depositphotos.com/1001564/2470/i/450/depositphotos_24704059-stock-photo-background.jpg');
-			}
-			div{
-				text-align: centre;
-			}
-			img{
-				display: block;
-				margin: 0 auto;
-			}
-		</style>
+
 		<meta charset="utf-8" />
         	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="about.css"/>
@@ -41,10 +16,21 @@
 				<button class="openbtn" onclick="openNav()" >☰ Menu</button>
 			</nav>
 			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			
+			<!-- Menu -->
+			<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<ul id="menu">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="Encadre/encadre1.html">Faire le test</a></li>
+				<li><a href="Tetris/Tetris.html">Ne pas faire le test</a></li>
+				<li><a href="noussommes.html">À propos de nous</a></li>
+			</ul>
+			</div>
 			<center>
 				<h2 >Qui sommes nous?</h2>
 			</center>
-			<center>
+			<div class="general">
 				<p>
 					Nous sommes sept en première année de licence en informatique à Rennes. <br>
 					Ceci est notre premier gros défi en informatique. En espérent que cela vous plaisent. <br>
@@ -57,10 +43,10 @@
 					Clément Delannoy <br>
 					Marine Vedolin <br>
 				</p>
-			</center>
-			<center>
+			</div>
+			<div class="general">
 				<img src="C:\Users\marin\OneDrive\Bureau\Fac\Projet DI\IMG_20231208_032501_695.JPG"/>
-			</center>
+			</div>
 		</div>
 	</body>
 </html>
