@@ -1,4 +1,4 @@
-/* Polices */
+-/* Polices */
 @font-face
 {
     font-family:texte;
@@ -501,7 +501,7 @@ nav {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #99a9c2;
+  background-color:#394B80;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -509,5 +509,5 @@ nav {
 }
 
 #myBtn:hover{
-background-color: #373e4a;
+background-color: #b4b6d1;
 }
