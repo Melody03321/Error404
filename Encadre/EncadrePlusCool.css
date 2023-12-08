@@ -6,16 +6,6 @@ html {
 	animation: fadein 1s;
 }
 
-body {
-	width: 600px;
- 	margin: 0 auto;
-  	background-color: #ff9500;
- 	padding: 0 20px 20px 20px;
- 	border: 5px solid black;
-
-	
-}
-
 h2,
 p
  {
