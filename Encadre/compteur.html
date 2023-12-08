@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ #increment {
+    font-size: 24px;
+    margin-right: 20px;
+ }
 
+ #decrement {
+    font-size: 24px;
+ }
+</style>
+</head>
+<body>
+
+<h2>Score</h2>
+
+<div id="score"></div>
+
+<button id="increment">Increment</button>
+<button id="decrement">Decrement</button>
+
+<script>
+ var score = 0;
+
+ document.getElementById('increment').addEventListener('click', function() {
+    score++;
+    updateScore();
+ });
+
+ document.getElementById('decrement').addEventListener('click', function() {
+    score--;
+    updateScore();
+ });
+
+ function updateScore() {
+    document.getElementById('score').innerText = 'Score: ' + score;
+ }
+
+ updateScore();
+</script>
+
+</body>
+</html>
