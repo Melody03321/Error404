@@ -28,34 +28,170 @@
 			</ul>
 			</div>
 
+			<!-- Titre -->
 			<h1 class="ml1">
 				<span class="text-wrapper">
 					<span class="line line1"></span>
-					<span class="letters">À propos de nous</span>
+					<span class="letters">Test: Êtes-vous un bon écolo?</span>
 					<span class="line line2"></span>
 				</span>
 			</h1>
 			
+			<!-- Contenu -->	
 			<div class="general">
-				<h2>Qui sommes nous?</h2>
-				<p>
-					Nous sommes sept en première année de licence en informatique à Rennes. <br>
-					Ceci est notre premier gros défi en informatique. En espérent que cela vous plaisent. <br>
+				<form name="quiz">
+					
+				<b>1. Quel est le nom de l'inventeur d'Enigma ?</b>
+				<label class="container">
+					<input type="radio" name="q1" value="M. Enigma 5ème du nom"> M. Enigma 5ème du nom
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q1" value="Arthur Scherbius"> Arthur Scherbius
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q1" value="Alan Turing"> Alan Turing
+					<span class="checkmark"></span>
+				</label>
 				
-					Baya Melki <br>
-					Emma Park <br>
-					Aaron Hajadi <br>
-					Ethan Le Rat <br>
-					Abdoullakh Gikhaev <br>
-					Clément Delannoy <br>
-					Marine Vedolin <br>
-				</p>
-			</div>
-			<div class="charlie">
-				<img src="Images/nous.jpg" class="image" />
-				<div class="middle">
-    					<img src="Images/charlie.png"/>
-  				</div>
+				<b>2. Qui parmi les Britanniques a brisé le code d'Enigma pendant la Seconde Guerre mondiale ?</b>
+				<label class="container">
+					<input type="radio" name="q2" value="Alan Turing"> Alan Turing
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q2" value="Scherbius"> Arthur Scherbius
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q2" value="Rejewski"> Marian Rejewski
+					<span class="checkmark"></span>
+				</label>
+				
+				<b>3. Combien de rotors sont fournis avec Enigma (M3) ?</b>
+				<label class="container">
+					<input type="radio" name="q3" value="Trois"> Trois
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q3" value="Huit"> Huit
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q3" value="Cinq"> Cinq
+					<span class="checkmark"></span>
+				</label>
+				
+				<b>4. Quel est le nombre de clés possibles avec Enigma M3 ?</b>
+				<label class="container">
+					<input type="radio" name="q4" value="A"> A) 5,04 x 10<sup>12</sup>
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q4" value="B"> B) 1,51 x 10<sup>14</sup>
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q4" value="C"> C) 1,59 x 10<sup>20</sup>
+					<span class="checkmark"></span>
+				</label>				
+				
+				<b>5. En quelle année Enigma commence-t-elle à être commercialisée en Europe et dans le monde ?</b>
+				<label class="container">
+					<input type="radio" name="q6" value="En 1918">En 1918
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q6" value="En 1923">En 1923
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q6" value="En 1939">En 1939
+					<span class="checkmark"></span>
+				</label>
+				
+				<b>6. Comment s'appelait la machine qui a permis à Turing et de nombreux cryptologues de décrypter les messages chiffrés par Enigma ?</b>
+				<label class="container">
+					<input type="radio" name="q7" value="The 'Bomba'">The 'Bomba'
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q7" value="The Bombe">The Bombe
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q7" value="The U-Boot">The U-Boot
+					<span class="checkmark"></span>
+				</label>
+				
+				<b>7. Pourquoi la machine de décryptage d'Enigma s'appelle-t-elle ainsi ?</b>
+				<label class="container">
+					<input type="radio" name="q8" value="A cause des tic-tac que produisait la machine lors de son fonctionnement."> À cause des tic-tac que produisait la machine lors de son fonctionnement.
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q8" value="À cause de son apparence qui ressemble à une vraie bombe."> À cause de son apparence qui ressemble à une vraie bombe.
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q8" value="Elle peut exploser à tout moment."> Elle peut exploser à tout moment.
+					<span class="checkmark"></span>
+				</label>
+				
+				<b>8. Combien de combinaisons d'alphabet peut-on faire avec 3 rotors ?</b>
+				<label class="container">
+					<input type="radio" name="q9" value="26"> 26 car il y a 26 lettres dans l'alphabet.
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q9" value="Un nombre trop grand pour être calculé."> Un nombre trop grand pour être calculé.
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q9" value="17 576"> 17 576 combinaisons
+					<span class="checkmark"></span>
+				</label>
+				
+				<b>9. En codant la lettre 'A' avec Enigma, elle peut devenir : </b>
+				<label class="container">
+					<input type="radio" name="q10" value="Une lettre dans toutes les lettres de l'alphabet sauf le 'A'."> Une lettre dans toutes les lettres de l'alphabet sauf le 'A'.
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q10" value="Une lettre dans toutes les lettres de l'alphabet"> Une lettre dans toutes les lettres de l'alphabet.
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">
+					<input type="radio" name="q10" value="Que la lettre suivante, un B.">Que la lettre suivante, un B.
+					<span class="checkmark"></span>
+				</label>
+				
+				<b>10. Sur quoi Turing et son équipe se sont-ils penchés pour décrypter Enigma ? (Plusieurs réponses sont attendues)</b>
+				<label class="container">Chaînes
+					<input type="checkbox" name="check1" value="1">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Boucles
+					<input type="checkbox" name="check2" value="2">
+					<span class="checkmark"></span>
+				</label>
+				<label class="container">Cribs
+					<input type="checkbox" name="check3" value="3">
+					<span class="checkmark"></span>
+				</label>
+				
+				
+				<input class="qcm_button" type="button" value="Score" onClick="getScore(this.form)">
+				<input class="qcm_button" type="reset" name="RAZ"><p>
+				Score = <input disabled id="score" type=text size=18 name="percentage"><br>
+				<br>
+				Réponses correctes :<br>
+				
+				<textarea disabled id="solutions" name="solutions" wrap="virtual" rows="10"></textarea></p>
+
+				</form>
+				
 			</div>
 			<footer id="footer">
 				<p>Site Erreur404</p>
